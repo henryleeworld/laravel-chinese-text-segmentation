@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>中文斷詞</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             padding-top: 70px;
@@ -25,7 +25,7 @@
         <form id="jieba-process-form" name="jieba_process_form" accept-charset="utf-8" action="/jieba-process" method="post">
             <input type="hidden" id="_token" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
-                <textarea style="font-size: 20px;line-height: 30px;" class="form-control" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限 140 字短文" rows="10">據 NCC 公佈的今年 2 月全台 4G 電信用戶總數，中華電信的單月用戶數爆增了超過 33 萬，單月成長幅度甚至超越 2018 年 5 月「499之亂」期間的 31.5 萬，成為近年來最大的一次單月用戶成長。</textarea>
+                <textarea style="font-size: 20px;line-height: 30px;" class="form-control" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限 140 字短文" rows="10">COVID-19 疫情嚴峻，民眾家用快篩試劑需求居高不下，尤其唾液快篩更搶手，每每一開賣就完銷，繼杏一、大樹、丁丁、佑全等連鎖藥局搶先開賣後，7-11、康是美及萊爾富隨後加入開賣行列，都造成大批排隊搶購人潮，許多民眾反應還是不容易買到。</textarea>
                 <div class="help-block d-none">
                     請輸入 1 ~ 140 字的短文
                 </div>
@@ -45,11 +45,11 @@
         <div id="jieba-result-block" class="d-none" style="font-size: 30px;line-height: 50px;">
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-    <script src="js/simplyCountable/0.4.2/jquery.simplyCountable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/simplyCountable/0.5.0/jquery.simplyCountable.js"></script>
     <script>
         $(document).ready(function() {
             $('#paragraph').simplyCountable({

@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JiebaController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,5 @@ use App\Http\Controllers\JiebaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/jieba', [JiebaController::class, 'index']);
 Route::post('/jieba', [JiebaController::class, 'process']);
