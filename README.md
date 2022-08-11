@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/kPRQgc9.png)
+![](https://i.imgur.com/LlPdl9W.png)
 > 所使用的演算法是基於字典樹結構去生成句子中中文字所有可能成詞的情況，然後使用動態規劃算法來找出最大機率的路徑，這個路徑就是基於詞頻的最大分詞結果
