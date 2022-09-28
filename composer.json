@@ -8,7 +8,7 @@
         "php": "^8.0.2",
         "fukuball/jieba-php": "^0.33",
         "guzzlehttp/guzzle": "^7.5",
-        "laravel/framework": "^9.29",
+        "laravel/framework": "^9.31",
         "laravel/sanctum": "^2.15.1",
         "laravel/tinker": "^2.7"
     },
@@ -17,8 +17,8 @@
         "laravel/sail": "^1.16.0",
         "mockery/mockery": "^1.5.1",
         "nunomaduro/collision": "^6.3",
-        "phpunit/phpunit": "^9.5.24",
-        "spatie/laravel-ignition": "^1.4"
+        "phpunit/phpunit": "^9.5.25",
+        "spatie/laravel-ignition": "^1.5"
     },
     "autoload": {
         "psr-4": {
