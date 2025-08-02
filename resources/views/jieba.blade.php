@@ -25,7 +25,7 @@
         <form id="jieba-process-form" name="jieba_process_form" accept-charset="utf-8" action="/jieba-process" method="post">
             <input type="hidden" id="_token" name="_token" value="{{ csrf_token() }}">
             <div class="row">
-                <textarea style="font-size: 20px;line-height: 30px;" class="form-control" id="paragraph" name="paragraph" placeholder="{{ __('Please enter the text to be segmented. The text is limited to 140 words.') }}" rows="10">{{ __('On October 14, 2023, tens of millions of Americans gawked skyward as the moon slid between the Earth and the sun, transforming the solar disk into a hollowed-out ring of fire for nearly five minutes.') }}</textarea>
+                <textarea style="font-size: 20px;line-height: 30px;" class="form-control" id="paragraph" name="paragraph" placeholder="{{ __('Please enter the text to be segmented. The text is limited to 140 words.') }}" rows="10">{{ __('At Singapore’s House of Seafood restaurant, the fish-head curry comes with a side of crunchy crickets, the tofu has bugs crawling out of it and the patrons can’t get enough.') }}</textarea>
                 <div class="help-block d-none">
                     {{ __('Please enter a text of 1 ~ 140 words') }}
                 </div>
